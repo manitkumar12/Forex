@@ -26,6 +26,7 @@ public class Forex_Hometask_6 extends Fragment {
 
 
     private RecyclerView recyclerView_4, recyclerView_5;
+    private WebView webView;
 
 
 
@@ -33,19 +34,20 @@ public class Forex_Hometask_6 extends Fragment {
 
 
     private My_Course_Forex_Adapter my_course_forex_adapter;
-    private WebView webView;
+
 
 
 
     private Vector<You_tube_Video> you_tube_videos= new  Vector<You_tube_Video>();
 
     private RecyclerView.LayoutManager mLayoutManager;
+    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>";
+
 
 
 
     private List<My_Course_Forex_Pojo> input;
 
-    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>";
 
 
 
@@ -64,6 +66,18 @@ public class Forex_Hometask_6 extends Fragment {
 //        recyclerView_5.setHasFixedSize(true);
 
 
+
+
+
+//
+//        you_tube_videos.add(new You_tube_Video("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>"));
+//
+//
+//
+//        YouTube_Adapter_class youTube_adapter_class= new YouTube_Adapter_class(you_tube_videos);
+//
+//        recyclerView_5.setAdapter(youTube_adapter_class);
+
         webView = (WebView) rootView.findViewById(R.id.web);
 
         webView.setWebViewClient(new WebViewClient() {
@@ -75,16 +89,6 @@ public class Forex_Hometask_6 extends Fragment {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.loadData(frameVideo, "text/html", "utf-8");
-
-
-//
-//        you_tube_videos.add(new You_tube_Video("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>"));
-//
-//
-//
-//        YouTube_Adapter_class youTube_adapter_class= new YouTube_Adapter_class(you_tube_videos);
-//
-//        recyclerView_5.setAdapter(youTube_adapter_class);
 //
 
 
