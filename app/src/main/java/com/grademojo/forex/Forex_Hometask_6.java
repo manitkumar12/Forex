@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -30,6 +33,7 @@ public class Forex_Hometask_6 extends Fragment {
 
 
     private My_Course_Forex_Adapter my_course_forex_adapter;
+    private WebView webView;
 
 
 
@@ -41,30 +45,47 @@ public class Forex_Hometask_6 extends Fragment {
 
     private List<My_Course_Forex_Pojo> input;
 
+    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>";
+
+
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.forex_hometask_6, container, false);
+        View rootView = inflater.inflate(R.layout.forex_video_6, container, false);
 
 
 
         recyclerView_4 = (RecyclerView) rootView.findViewById(R.id.recycler_view_4);
-        recyclerView_5 = (RecyclerView) rootView.findViewById(R.id.recycler_view_5);
-
-        recyclerView_5.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView_5.setHasFixedSize(true);
-
-
-
-        you_tube_videos.add(new You_tube_Video("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>"));
+//        recyclerView_5 = (RecyclerView) rootView.findViewById(R.id.recycler_view_5);
+//
+//        recyclerView_5.setLayoutManager(new LinearLayoutManager(getActivity()));
+//        recyclerView_5.setHasFixedSize(true);
 
 
+        webView = (WebView) rootView.findViewById(R.id.web);
 
-        YouTube_Adapter_class youTube_adapter_class= new YouTube_Adapter_class(you_tube_videos);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.loadData(frameVideo, "text/html", "utf-8");
 
-        recyclerView_5.setAdapter(youTube_adapter_class);
 
+//
+//        you_tube_videos.add(new You_tube_Video("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>"));
+//
+//
+//
+//        YouTube_Adapter_class youTube_adapter_class= new YouTube_Adapter_class(you_tube_videos);
+//
+//        recyclerView_5.setAdapter(youTube_adapter_class);
+//
 
 
 
