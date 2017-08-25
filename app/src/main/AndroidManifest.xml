@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grademojo.forex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_blue"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash_Screen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Main3Activity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Main4Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Main5Activity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+             />
+        <activity
+            android:name=".Main6Activity"
+            android:screenOrientation="portrait"
+           />
+        <activity
+            android:name=".Main7Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Articles_forex"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Home_Task_Forex"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+             />
+        <activity
+            android:name=".Main8Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".Main9Activity"
+            android:screenOrientation="portrait"
+             />
+        <activity android:name=".Sign_up"
+            android:screenOrientation="portrait"/>
+    </application>
+</manifest>
