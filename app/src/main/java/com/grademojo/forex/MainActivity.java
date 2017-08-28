@@ -1,8 +1,10 @@
 package com.grademojo.forex;
 
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,6 +20,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -254,15 +258,46 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_share) {
 
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            StringBuilder sb = new StringBuilder();
+            sb.append("Hi, I am using Forex to learning. I like this and I want you to check it out.");
+           // sb.append("https://www.amazon.com/Sandhu-BYE-Book-Your-Event/dp/B071192YG2/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1494678627&sr=1-1&keywords=bye");
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Thanks to Share:FOREX");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, sb.toString());
+            startActivity(Intent.createChooser(sharingIntent, "Thanks to Share:FOREX"));
+
+
         } else if (id == R.id.nav_send) {
+
+
+            ApplicationInfo applicationInfo = getApplicationContext().getApplicationInfo();
+
+            String filepath = applicationInfo.sourceDir;
+
+            Intent intent = new Intent(Intent.ACTION_SEND);
+
+            intent.setType("*/*");
+
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filepath)));
+            intent.setType("application/vnd.android.package-archive");
+            startActivity(Intent.createChooser(intent,"Share app"));
+
+
 
         }
         else if (id == R.id.Logout)
         {
 
 
+            Intent i = new Intent(MainActivity.this,Main2Activity.class);
+
+            startActivity(i);
+
         }
-        
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

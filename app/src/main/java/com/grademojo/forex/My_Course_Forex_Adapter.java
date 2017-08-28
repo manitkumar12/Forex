@@ -121,7 +121,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
 
-                    Intent i = new Intent(context, Main8Activity.class);
+                    Intent i = new Intent(context, Main9Activity.class);
                     context.startActivity(i);
 
 
@@ -194,7 +194,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
 
 
-                    Intent i = new Intent(context1, Main8Activity.class);
+                    Intent i = new Intent(context1, Main9Activity.class);
                     context1.startActivity(i);
 
                 } else if (position == 1) {
@@ -262,7 +262,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
 
-                    Intent i = new Intent(context2, Main8Activity.class);
+                    Intent i = new Intent(context2, Main9Activity.class);
                     context2.startActivity(i);
 
 

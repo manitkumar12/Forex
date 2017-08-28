@@ -183,6 +183,7 @@
             >
 
             <ImageView
+                android:id="@+id/image_facebook"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/face"

@@ -25,57 +25,71 @@
         </activity>
         <activity
             android:name=".Main2Activity"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main3Activity"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main4Activity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main5Activity"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main6Activity"
-            android:screenOrientation="portrait"
-           />
+            android:screenOrientation="portrait" />
+
+
         <activity
             android:name=".Main7Activity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity
             android:name=".Articles_forex"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true"
             android:noHistory="true"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Home_Task_Forex"
             android:clearTaskOnLaunch="true"
             android:excludeFromRecents="true"
             android:finishOnTaskLaunch="true"
-            android:screenOrientation="portrait"
             android:noHistory="true"
-             />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main8Activity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Main9Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sign_up"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+
+            />
+
+        <activity android:name=".Facebook_integration"
             android:screenOrientation="portrait"
-             />
-        <activity android:name=".Sign_up"
-            android:screenOrientation="portrait"/>
+            >
+
+
+
+
+        </activity>
     </application>
+
 </manifest>

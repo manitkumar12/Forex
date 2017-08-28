@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Main7Activity extends AppCompatActivity {
@@ -15,6 +16,8 @@ public class Main7Activity extends AppCompatActivity {
     private TextView sign_Text_view ,login_text_view;
 
     Intent i;
+
+    ImageView image_fb;
 
 
 
@@ -30,6 +33,15 @@ public class Main7Activity extends AppCompatActivity {
         sign_Text_view = (TextView) findViewById(R.id.text_view_sign_in);
         card_view_login = (CardView) findViewById(R.id.login_card_view);
         login_text_view = (TextView) findViewById(R.id.login_text_view);
+        image_fb = (ImageView) findViewById(R.id.image_facebook);
+
+        image_fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                i = new Intent(Main7Activity.this,Facebook_integration.class);
+                startActivity(i);
+            }
+        });
 
 
         card_View_Sign_in.setOnClickListener(new View.OnClickListener() {

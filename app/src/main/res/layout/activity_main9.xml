@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@color/white"
     tools:context="com.grademojo.forex.Main9Activity">
 
 
@@ -59,67 +60,13 @@
 
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="The foreign exchange market – also "
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:textSize="20dp"
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/contentimage_1"
         />
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        >
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="known as"
-            android:textSize="20dp"
-
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Forex"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="@color/green"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" or the FX market–is"
-            android:textSize="20sp"
-            />
-
-
-
-    </LinearLayout>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:textSize="20dp"
-
-        android:text="the world’s most traded market,with\nturn over of $5.1 trillion per day*."
-        />
 
 
     <ImageView
@@ -132,79 +79,12 @@
         android:layout_marginBottom="20dp"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
 
-        android:textSize="20sp"
-        android:text="To put this into perspective ,the U.S. "
-        />
-
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:textSize="20sp"
-            android:text="stock markets trades around "
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:src="@drawable/contentimage_2"
             />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" $226"
-            android:textColor="@color/green"
-            android:textSize="20sp"
-            />
-
-
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:textSize="20dp"
-        android:textColor="@color/green"
-        android:text="billion a day ; quite a large  sum, but \nonly a  fraction of what forex trades."
-        />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:gravity="center_horizontal"
-        android:textSize="20dp"
-        android:text="Forex is traded 24 hours a day,5 day \na week across by banks institutions "/>
-
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-
-            android:textSize="20dp"
-            android:text="and individual trade worldwide other \nfinancial markets ,there is no centra\nlized marketplace for forex currenci \nes trade over the counterin whatever\nmarket is open at that time."/>
-
-
-
 
     </LinearLayout>
 </ScrollView>

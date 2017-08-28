@@ -2,8 +2,10 @@ package com.grademojo.forex;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -18,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -223,12 +226,42 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
 
         } else if (id == R.id.nav_share) {
 
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            StringBuilder sb = new StringBuilder();
+            sb.append("Hi, I am using Forex to learning. I like this and I want you to check it out.");
+            // sb.append("https://www.amazon.com/Sandhu-BYE-Book-Your-Event/dp/B071192YG2/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1494678627&sr=1-1&keywords=bye");
+            sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+            sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Thanks to Share:FOREX");
+            sharingIntent.putExtra(Intent.EXTRA_TEXT, sb.toString());
+            startActivity(Intent.createChooser(sharingIntent, "Thanks to Share:FOREX"));
+
+
         } else if (id == R.id.nav_send) {
+
+
+            ApplicationInfo applicationInfo = getApplicationContext().getApplicationInfo();
+
+            String filepath = applicationInfo.sourceDir;
+
+            Intent intent = new Intent(Intent.ACTION_SEND);
+
+            intent.setType("*/*");
+
+            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filepath)));
+            intent.setType("application/vnd.android.package-archive");
+            startActivity(Intent.createChooser(intent,"Share app"));
+
+
 
         }
         else if (id == R.id.Logout)
         {
 
+
+            Intent i = new Intent(Main5Activity.this,Main2Activity.class);
+
+            startActivity(i);
 
         }
 
