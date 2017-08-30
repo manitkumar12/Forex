@@ -94,9 +94,6 @@ public class Forex_Hometask_6 extends Fragment {
 
 
 
-
-
-
         mLayoutManager = new LinearLayoutManager(getActivity());
 
         recyclerView_4.setLayoutManager(mLayoutManager);

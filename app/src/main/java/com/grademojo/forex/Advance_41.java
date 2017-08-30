@@ -37,7 +37,7 @@ public class Advance_41 extends Fragment {
         private List<My_Course_pojo_second> input2;
 
 
-        private TextView textView_Intermediate ,textView_Advance;
+        private TextView textView_Intermediate , textView_Advance;
 
         private TextView textView_mu_course ,textView_suggested_course;
 

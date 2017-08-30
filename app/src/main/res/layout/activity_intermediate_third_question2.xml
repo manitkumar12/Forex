@@ -9,19 +9,13 @@
     android:background="@color/white"
     tools:context="com.grademojo.forex.Main9Activity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+
         android:gravity="center_horizontal"
         >
-
-
-
-
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#ffffff"
-                android:text="What is Forex ?"
+                android:text="Why am I trading ? "
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginStart="20dp"
@@ -54,17 +48,29 @@
 
 
 
-
-
         </LinearLayout>
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="30dp"
 
-       <TextView
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Once you decide what type of trader you are, you should begin to invest yourself into education and research. Make continual learning a priority, each person’s strategy or methodology is unique and cannot be duplicated. Therefore your plan is most successful when it is based on your individual needs. Evaluate your needs and the effort required. Make sure you understand why you are placing trades. An initial investment maybe monetary but will benefit you over the long-term. Time and research should be continuing investments. Research by way of following current global events and keeping up to date on current analysis tools will help educate you further on all aspects of trading. Ask yourself, “Am I a fundamental or technical trader?”"
-           />
+            android:src="@drawable/image" />
+
+        <WebView
+            android:id="@+id/web_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            >
+
+        </WebView>
+
 
     </LinearLayout>
+
+
+
 </ScrollView>

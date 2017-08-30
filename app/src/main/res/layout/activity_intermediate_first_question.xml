@@ -9,19 +9,14 @@
     android:background="@color/white"
     tools:context="com.grademojo.forex.Main9Activity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:id="@+id/zoom"
+
         android:gravity="center_horizontal"
         >
-
-
-
-
-
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#ffffff"
-                android:text="What is Forex ?"
+                android:text="How to Develop a Trading Plan ?"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginStart="20dp"
@@ -60,11 +55,44 @@
 
 
 
-       <TextView
+
+       <WebView
+           android:id="@+id/web_text_1"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:text="Once you decide what type of trader you are, you should begin to invest yourself into education and research. Make continual learning a priority, each person’s strategy or methodology is unique and cannot be duplicated. Therefore your plan is most successful when it is based on your individual needs. Evaluate your needs and the effort required. Make sure you understand why you are placing trades. An initial investment maybe monetary but will benefit you over the long-term. Time and research should be continuing investments. Research by way of following current global events and keeping up to date on current analysis tools will help educate you further on all aspects of trading. Ask yourself, “Am I a fundamental or technical trader?”"
-           />
+           android:layout_margin="20dp"
+
+           >
+
+
+       </WebView>
+
+        <WebView
+            android:id="@+id/web_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+            >
+
+
+        </WebView>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </LinearLayout>
+
+
+
 </ScrollView>

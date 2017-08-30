@@ -67,7 +67,6 @@
                 android:layout_gravity="center"
                 android:src="@drawable/pic" />
 
-
         </FrameLayout>
 
     </FrameLayout>

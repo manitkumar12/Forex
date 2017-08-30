@@ -3,6 +3,10 @@
     package="com.grademojo.forex">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
 
     <application
         android:allowBackup="true"
@@ -15,8 +19,7 @@
             android:name=".Splash_Screen"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"
-            >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,6 +29,12 @@
         <activity
             android:name=".Main2Activity"
             android:screenOrientation="portrait" />
+        <!-- android:finishOnTaskLaunch="true" -->
+        <!-- android:clearTaskOnLaunch="true" -->
+        <!-- android:excludeFromRecents="true" -->
+        <!-- android:noHistory="true" -->
+
+        />
         <activity
             android:name=".Main3Activity"
             android:screenOrientation="portrait" />
@@ -41,13 +50,9 @@
         <activity
             android:name=".Main6Activity"
             android:screenOrientation="portrait" />
-
-
         <activity
             android:name=".Main7Activity"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Articles_forex"
             android:clearTaskOnLaunch="true"
@@ -78,18 +83,15 @@
 
         <activity
             android:name="com.facebook.FacebookActivity"
-            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-
-            />
-
-        <activity android:name=".Facebook_integration"
-            android:screenOrientation="portrait"
-            >
-
-
-
-
-        </activity>
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity
+            android:name=".Facebook_integration"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Intermediate_first_question" />
+        <activity android:name=".Intermediate_second_question" />
+        <activity android:name=".Intermediate_third_question" />
+        <activity android:name=".Intermediate_fourth_question" />
+        <activity android:name=".Intermediate_five_question" />
+        <activity android:name=".Intermediate_six_question"/>
     </application>
-
 </manifest>

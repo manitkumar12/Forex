@@ -101,12 +101,12 @@ public class Forex_Article_6 extends Fragment {
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "What is Forex? ", R.color.grey));
+                "What is Forex? ", R.color.blue));
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "When can I trade forex?", R.color.grey
+                "When can I trade forex?", R.color.blue
         ));
 
 

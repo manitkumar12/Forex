@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -28,11 +29,9 @@ public class MainActivity extends AppCompatActivity
 
     private TextView textView_Intermediate ,textView_Advance, textView_beginner;
 
+
+
     private View border_one ,border_two;
-
-
-
-
 
 
 
@@ -108,6 +107,8 @@ public class MainActivity extends AppCompatActivity
                 textView_Advance.setBackgroundResource(R.drawable.advance_backgrond);
 
                 textView_Intermediate.setTextColor(Color.parseColor("#ffffff"));
+
+//              textView_Intermediate.setTextColor(ContextCompat.getColor(v.getContext(),R.color.white));
                 textView_beginner.setTextColor(Color.parseColor("#989797"));
                 textView_Advance.setTextColor(Color.parseColor("#989797"));
                 border_one.setBackgroundResource(R.color.blue);
@@ -191,12 +192,6 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
-
-
-
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -262,7 +257,7 @@ public class MainActivity extends AppCompatActivity
             sharingIntent.setType("text/plain");
             StringBuilder sb = new StringBuilder();
             sb.append("Hi, I am using Forex to learning. I like this and I want you to check it out.");
-           // sb.append("https://www.amazon.com/Sandhu-BYE-Book-Your-Event/dp/B071192YG2/ref=sr_1_1?s=mobile-apps&ie=UTF8&qid=1494678627&sr=1-1&keywords=bye");
+           sb.append("https://play.google.com/store/movies/details/The_Boss_Baby?id=ITr_iM5OT2E");
             sharingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
             sharingIntent.putExtra(Intent.EXTRA_SUBJECT, "Thanks to Share:FOREX");
             sharingIntent.putExtra(Intent.EXTRA_TEXT, sb.toString());
