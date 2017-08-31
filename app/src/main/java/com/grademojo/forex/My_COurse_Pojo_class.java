@@ -4,7 +4,7 @@ package com.grademojo.forex;
  * Created by sapling_a0 on 18/8/17.
  */
 
-public class My_COurse_Pojo_class {
+public class My_COurse_Pojo_class extends My_course_pojo_first {
 
 
     private String my_course_text;

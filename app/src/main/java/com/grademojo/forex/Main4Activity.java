@@ -111,7 +111,7 @@ public class Main4Activity extends AppCompatActivity {
         cardView_Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                i = new Intent(Main4Activity.this,MainActivity.class);
+                i = new Intent(Main4Activity.this,Main4Activity_practice.class);
                 startActivity(i);
             }
         });
@@ -119,7 +119,7 @@ public class Main4Activity extends AppCompatActivity {
         textView_Next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                i = new Intent(Main4Activity.this,MainActivity.class);
+                i = new Intent(Main4Activity.this,Main4Activity_practice.class);
                 startActivity(i);
             }
         });

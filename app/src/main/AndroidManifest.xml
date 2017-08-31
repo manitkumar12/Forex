@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_blue"
@@ -54,20 +53,6 @@
             android:name=".Main7Activity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Articles_forex"
-            android:clearTaskOnLaunch="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
-            android:noHistory="true"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Home_Task_Forex"
-            android:clearTaskOnLaunch="true"
-            android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
-            android:noHistory="true"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".Main8Activity"
             android:screenOrientation="portrait" />
         <activity
@@ -92,6 +77,13 @@
         <activity android:name=".Intermediate_third_question" />
         <activity android:name=".Intermediate_fourth_question" />
         <activity android:name=".Intermediate_five_question" />
-        <activity android:name=".Intermediate_six_question"/>
+        <activity android:name=".Intermediate_six_question" />
+        <activity android:name=".Main4Activity_practice" />
+        <activity android:name=".Advance_first_question" />
+        <activity android:name=".Advance_second_question" />
+        <activity android:name=".Advance_third_question" />
+        <activity android:name=".Advance_fourth_question" />
+        <activity android:name=".Advance_five_question"></activity>
     </application>
+
 </manifest>

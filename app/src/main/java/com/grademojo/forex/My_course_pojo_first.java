@@ -18,9 +18,8 @@ public class My_course_pojo_first {
 
     }
 
-
-
-
+    public My_course_pojo_first() {
+    }
 
 
     public int getMy_image_course() {
@@ -33,10 +32,6 @@ public class My_course_pojo_first {
     public void setMy_image_course(int my_image_course) {
         this.my_image_course = my_image_course;
     }
-
-
-
-
 
 
 

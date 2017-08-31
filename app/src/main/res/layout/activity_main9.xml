@@ -20,12 +20,9 @@
 
 
 
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:paddingTop="50dp"
         android:background="#3f88fb"
         android:paddingBottom="20dp"
@@ -71,11 +68,12 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="189dp"
+        android:layout_height="190dp"
         android:src="@drawable/image"
         android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         />
 

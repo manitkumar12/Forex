@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,41 +12,39 @@
 
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#ffffff"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_blue"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"
+
+            />
+
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:background="#ffffff"
-            >
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:src="@drawable/logo_blue"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="40dp"
-
-        />
-
-
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
             android:layout_marginEnd="50dp"
-            android:layout_marginTop="50dp"
-
-
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
             >
+
 
             <TextView
                 android:id="@+id/name_text_view_sign_in"
@@ -74,18 +72,16 @@
                 android:id="@+id/name_border_line"
                 android:layout_width="wrap_content"
                 android:layout_height="2dp"
+                android:layout_marginStart="10dp"
                 android:background="#e8eaee"
-                android:layout_alignStart="@+id/email_name_text_sign_in"
-                android:layout_alignEnd="@+id/email_name_text_sign_in"
-                android:layout_below="@+id/email_name_text_sign_in"
-
                 />
 
 
 
 
+
             <TextView
-                android:id="@+id/professional_text_view_sign_in"
+                android:id="@+id/password_text_view_sign_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -96,53 +92,60 @@
                 android:layout_marginTop="20dp"
                 android:layout_below="@+id/name_border_line"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/profession_edit_text_sign_in"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:background="#00000000"
-                android:layout_marginStart="10dp"
-                android:lines="1"
-                android:inputType="textPassword"
-                android:layout_below="@+id/professional_text_view_sign_in"
-                />
 
-            <ImageView
-                android:id="@+id/eye"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/eye"
-                android:layout_toEndOf="@+id/profession_edit_text_sign_in"
-                android:layout_alignBottom="@+id/profession_edit_text_sign_in"
-                />
+
+
+                <EditText
+                    android:id="@+id/password_edit_text_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:layout_marginStart="10dp"
+                    android:lines="1"
+                    android:inputType="textPassword"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/eye1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/eye"
+
+                    />
+
+            </LinearLayout>
 
             <View
-                android:id="@+id/profession_border_line"
+                android:id="@+id/password_border_line"
                 android:layout_width="wrap_content"
                 android:layout_height="2dp"
                 android:background="#e8eaee"
-                android:layout_alignStart="@+id/profession_edit_text_sign_in"
-                android:layout_alignEnd="@+id/eye"
-                android:layout_below="@+id/profession_edit_text_sign_in"
+                android:layout_marginStart="10dp"
 
                 />
 
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Forget password?"
                 android:textColor="#ffc543"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="end"
                 android:layout_marginTop="10dp"
                 android:textSize="12dp"
-                android:layout_below="@+id/profession_border_line"
-                android:layout_alignEnd="@+id/profession_border_line"
-                />
 
+                 />
 
+            </LinearLayout>
 
-        </RelativeLayout>
 
 
 
@@ -155,7 +158,6 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         app:cardBackgroundColor="#3f88fb"
-
         app:cardElevation="0dp"
 
         >
@@ -194,59 +196,39 @@
         </LinearLayout>
 
 
-    </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
 
 
-
-
-
-
-
-
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:gravity="center_horizontal"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"
-            android:textColor="#9f9c9c"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            >
 
-            />
-        <TextView
-            android:id="@+id/sign_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign up"
-            android:textColor="#3f88fb"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:textColor="#9f9c9c"
 
-            />
+                />
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="#3f88fb"
+
+                />
 
 
-
-
-
-
-
+        </LinearLayout>
 
     </LinearLayout>
 
-
-            </LinearLayout>
-
-    </ScrollView>
-
-
-
-
-</LinearLayout>
+</ScrollView>

@@ -54,7 +54,6 @@ public class My_Course_Adapter extends RecyclerView.Adapter<My_Course_Adapter.Vi
 
 
 
-
         }
     }
 

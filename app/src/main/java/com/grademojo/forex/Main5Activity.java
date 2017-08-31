@@ -30,8 +30,6 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
 //    private My_Course_Adapter m_Adapter;
 
 
-
-
     private TextView textView_ongoing ,textView_Complted,textView_all;
 
     private View border;
@@ -43,6 +41,9 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
     My_course_All_5 my_course_all_5 = new My_course_All_5();
     My_Course_Ongoing_5 my_course_ongoing_5 = new My_Course_Ongoing_5();
     My_Course_Completed_5 my_course_completed_5 = new My_Course_Completed_5();
+
+    Intermediate_41 intermediate_41 = new Intermediate_41();
+    Advance_41 advance_41 = new Advance_41();
 
 
 
@@ -85,16 +86,33 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
             public void onClick(View v) {
 
 
-                main5.beginTransaction().replace(R.id.frame_5,my_course_ongoing_5).commit();
+//                main5.beginTransaction().replace(R.id.frame_5,my_course_ongoing_5).commit();
+//
+//                textView_ongoing.setBackgroundResource(R.drawable.intermediate_background);
+//                textView_Complted.setBackgroundResource(R.drawable.advance_backgrond);
+//
+//                border.setBackgroundResource(R.color.blue);
+//
+//                textView_ongoing.setTextColor(Color.parseColor("#ffffff"));
+//                textView_all.setTextColor(Color.parseColor("#989797"));
+//                textView_Complted.setTextColor(Color.parseColor("#989797"));
+//                textView_all.setBackgroundResource(R.drawable.begiiner_backround);
+//                textView_ongoing.setTypeface(textView_ongoing.getTypeface(), Typeface.BOLD);
+//                textView_all.setTypeface(textView_all.getTypeface(), Typeface.NORMAL);
+//                textView_Complted.setTypeface(textView_Complted.getTypeface(), Typeface.NORMAL);
+
+
+                main5.beginTransaction().replace(R.id.frame_5,intermediate_41).commit();
 
                 textView_ongoing.setBackgroundResource(R.drawable.intermediate_background);
                 textView_Complted.setBackgroundResource(R.drawable.advance_backgrond);
 
-                border.setBackgroundResource(R.color.blue);
-
                 textView_ongoing.setTextColor(Color.parseColor("#ffffff"));
+
+//              textView_Intermediate.setTextColor(ContextCompat.getColor(v.getContext(),R.color.white));
                 textView_all.setTextColor(Color.parseColor("#989797"));
                 textView_Complted.setTextColor(Color.parseColor("#989797"));
+                border.setBackgroundResource(R.color.blue);
                 textView_all.setBackgroundResource(R.drawable.begiiner_backround);
                 textView_ongoing.setTypeface(textView_ongoing.getTypeface(), Typeface.BOLD);
                 textView_all.setTypeface(textView_all.getTypeface(), Typeface.NORMAL);
@@ -145,7 +163,7 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
             public void onClick(View v) {
 
 
-                main5.beginTransaction().replace(R.id.frame_5, my_course_completed_5).commit();
+                main5.beginTransaction().replace(R.id.frame_5, advance_41).commit();
 
                 textView_Complted.setBackgroundResource(R.drawable.back_ground_blue_article);
 

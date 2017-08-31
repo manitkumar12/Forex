@@ -39,6 +39,9 @@
                     android:layout_marginTop="1dp"
                     />
 
+
+
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
@@ -47,13 +50,16 @@
 
                     />
 
+
             </LinearLayout>
+
+
 
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main_2"
+    <include layout="@layout/content_main_4"
 
         />
 

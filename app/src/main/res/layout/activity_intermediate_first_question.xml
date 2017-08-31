@@ -9,89 +9,77 @@
     android:background="@color/white"
     tools:context="com.grademojo.forex.Main9Activity">
 
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/zoom"
+
+      android:gravity="center_horizontal"
+      >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/zoom"
+        android:paddingTop="50dp"
+        android:background="#3f88fb"
+        android:paddingBottom="20dp"
 
-        android:gravity="center_horizontal"
         >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="50dp"
-            android:background="#3f88fb"
-            android:paddingBottom="20dp"
 
-            >
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textColor="#ffffff"
+          android:text="Is the amount of money I have to trade with sensible to achieve my goals ?"
+          android:textSize="18sp"
+          android:gravity="center"
+          android:layout_marginStart="20dp"
+          />
 
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textColor="#ffffff"
-                android:text="How to Develop a Trading Plan ?"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:layout_marginStart="20dp"
-                />
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_gravity="center"
-                android:src="@drawable/search"
-                />
-
-
-
-
-
-        </LinearLayout>
-
-
-
-
-       <WebView
-           android:id="@+id/web_text_1"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="20dp"
-
-           >
-
-
-       </WebView>
-
-        <WebView
-            android:id="@+id/web_text_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-
-            >
-
-
-        </WebView>
-
-
-
-
-
-
-
-
-
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginEnd="20dp"
+          android:layout_gravity="center"
+          android:src="@drawable/search"
+          />
 
 
 
 
 
     </LinearLayout>
+
+
+
+
+    <WebView
+        android:id="@+id/web_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+    </WebView>
+    <WebView
+        android:id="@+id/web_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+    </WebView>
+
+
+
+  </LinearLayout>
 
 
 
