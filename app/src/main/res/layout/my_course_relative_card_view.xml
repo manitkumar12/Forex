@@ -3,22 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="160dp"
-    android:layout_height="220dp"
-
+    android:layout_height="180dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginBottom="20dp"
     android:orientation="vertical"
     android:background="#ffffff"
     >
 
 
 
-
-
         <ImageView
             android:id="@+id/my_course_images"
             android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_height="120dp"
             android:background="#121212"
-            android:layout_marginStart="5dp"
+
 
 
             />
@@ -28,8 +27,9 @@
             android:layout_width="140dp"
             android:layout_height="match_parent"
             android:text="What is Forex ?"
-            android:gravity="center"
-            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+
 
             />
 

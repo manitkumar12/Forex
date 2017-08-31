@@ -14,125 +14,122 @@
 
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="30dp"
-                android:background="#3f88fb"
-                android:paddingBottom="20dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:background="#3f88fb"
+        android:paddingBottom="20dp"
 
-                >
-
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="#ffffff"
-                    android:text="All Courses"
-                    android:textSize="18sp"
-                    android:gravity="center"
-                    android:layout_marginStart="20dp"
-                    />
+        >
 
 
-                
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="3"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/background_white"
-                >
-
-                <TextView
-                    android:id="@+id/text_for_All"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Beginner"
-                    android:textColor="#ffffff"
-                    android:textStyle="bold"
-                    android:background="@drawable/blue"
-                    android:gravity="center"
-
-
-                    />
-
-                <View
-                    android:id="@+id/all_course"
-                    android:layout_width="1dp"
-                    android:layout_marginTop="1dp"
-                    android:layout_height="38dp"
-                    android:background="#989797"
-                    />
-
-
-                <TextView
-                    android:id="@+id/text_for_Ongoing"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Intermediate"
-                    android:textColor="#989797"
-                    android:background="#ffffff"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:gravity="center"
-
-                    />
-
-
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="40dp"
-                    android:background="#989797"
-                    />
-
-                <TextView
-                    android:id="@+id/text_for_Completed"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:text="Advance"
-                    android:layout_weight="1"
-                    android:textColor="#989797"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginBottom="1dp"
-                    android:layout_marginEnd="1dp"
-                    android:background="@drawable/white"
-                    android:gravity="center"
-                    />
-
-
-
-            </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:text="All Courses"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            />
 
 
 
 
+    </LinearLayout>
 
 
-            <FrameLayout
-                android:id="@+id/frame_5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginEnd="20dp"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="20dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_white"
+        >
 
-                >
+        <TextView
+            android:id="@+id/text_for_All"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Beginner"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/blue"
+            android:gravity="center"
 
-            </FrameLayout>
+
+            />
+
+        <View
+            android:id="@+id/all_course"
+            android:layout_width="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_height="38dp"
+            android:background="#989797"
+            />
+
+
+        <TextView
+            android:id="@+id/text_for_Ongoing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Intermediate"
+            android:textColor="#989797"
+            android:background="#ffffff"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+
+            />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#989797"
+            />
+
+        <TextView
+            android:id="@+id/text_for_Completed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Advance"
+            android:layout_weight="1"
+            android:textColor="#989797"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/white"
+            android:gravity="center"
+            />
 
 
 
-        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
 
 
 
