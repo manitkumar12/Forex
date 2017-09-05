@@ -1,6 +1,8 @@
 package com.grademojo.forex;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +18,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
+
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 
 public class Forex_Video_6 extends Fragment {
@@ -44,7 +48,7 @@ public class Forex_Video_6 extends Fragment {
 
     private List<My_Course_Forex_Pojo> input;
 
-    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>";
+    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe> ? autoplay = 1";
 
 
     @Nullable
@@ -57,6 +61,8 @@ public class Forex_Video_6 extends Fragment {
         recyclerView_4 = (RecyclerView) rootView.findViewById(R.id.recycler_view_4);
         webView = (WebView) rootView.findViewById(R.id.web);
 
+
+
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -66,6 +72,7 @@ public class Forex_Video_6 extends Fragment {
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.loadData(frameVideo, "text/html", "utf-8");
+
 
 
 
@@ -102,45 +109,45 @@ public class Forex_Video_6 extends Fragment {
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "What is Forex? ", R.color.grey));
+                "What is Forex? ", R.color.grey,"3-min"));
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "When can I trade forex?", R.color.grey
+                "When can I trade forex?", R.color.grey,"3-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Why trade forex", R.color.grey
+                "Why trade forex", R.color.grey,"4-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
                 "Charting Basics "
-                , R.color.grey
+                , R.color.grey,"3-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Understanding Technical \n Analysis", R.color.grey
-
-        ));
-
-
-        input.add(new My_Course_Forex_Pojo(
-                R.drawable.grey_icon,
-                "Five Key Drivers of \nthe Forex Markets", R.color.grey
+                "Understanding Technical \n Analysis", R.color.grey,"3-min"
 
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "What Is Fundamental \n Analysis", R.color.grey
+                "Five Key Drivers of \nthe Forex Markets", R.color.grey,"5-min"
+
+        ));
+
+
+        input.add(new My_Course_Forex_Pojo(
+                R.drawable.grey_icon,
+                "What Is Fundamental \n Analysis", R.color.grey,"4-min"
 
         ));
 

@@ -38,13 +38,6 @@
                 android:layout_marginStart="20dp"
                 />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_gravity="center"
-                android:src="@drawable/search"
-                />
 
 
 

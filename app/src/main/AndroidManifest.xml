@@ -42,7 +42,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Main5Activity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+
+            />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />
@@ -83,7 +85,14 @@
         <activity android:name=".Advance_second_question" />
         <activity android:name=".Advance_third_question" />
         <activity android:name=".Advance_fourth_question" />
-        <activity android:name=".Advance_five_question"></activity>
+        <activity android:name=".Advance_five_question" />
+        <activity android:name=".Beginner_forex_video_first_question" />
+        <activity android:name=".Beginner_forex_video_second_question" />
+        <activity android:name=".Beginner_forex_video_third_question" />
+        <activity android:name=".Beginner_forex_video_fourth_question" />
+        <activity android:name=".Beginner_forex_video_five_question" />
+        <activity android:name=".Beginner_forex_video_six_question" />
+        <activity android:name=".Beginner_forex_video_seven_question"></activity>
     </application>
 
 </manifest>

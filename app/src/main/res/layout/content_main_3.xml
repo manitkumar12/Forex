@@ -21,8 +21,19 @@
         android:paddingTop="20dp"
         android:background="#3f88fb"
         android:paddingBottom="20dp"
+        android:paddingStart="10dp"
 
         >
+
+        <TextView
+            android:id="@+id/menu_bar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/menu"
+            android:layout_gravity="start"
+
+
+            />
 
         <TextView
             android:layout_width="0dp"
@@ -32,7 +43,22 @@
             android:text="What is Forex"
             android:textSize="18sp"
             android:gravity="center"
-            android:layout_marginStart="20dp"
+
+            />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_marginEnd="10dp"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/settings"
+            android:layout_marginEnd="10dp"
             />
 
 
@@ -122,6 +148,7 @@
         android:id="@+id/frmae_6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
 
       />
 

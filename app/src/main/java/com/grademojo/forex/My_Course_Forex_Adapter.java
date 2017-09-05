@@ -22,7 +22,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
     private List<My_Course_Forex_Pojo> value1_2;
 
-    Context context, context1, context2;
+    Context context, context1, context2 ,context4;
 
 
 
@@ -32,7 +32,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
         public View border_forex;
 
 
-        public TextView textView_My_course_forex;
+        public TextView textView_My_course_forex, time;
 
         public ImageView image_My_Courses_forex;
 
@@ -51,6 +51,8 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
             textView_My_course_forex = (TextView) itemView.findViewById(R.id.forex_text_view_my_course);
 
             image_My_Courses_forex = (ImageView) itemView.findViewById(R.id.forex_play_icon_my_course);
+
+            time = (TextView) itemView.findViewById(R.id.timing);
 
             border_forex  = itemView.findViewById(R.id.forex_border_my_course);
 
@@ -98,6 +100,8 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
         String my_course_text_2 = value1_2.get(position).getIntroduction();
 
+        String timing_2 = value1_2.get(position).getTimimg_1();
+
 
         holder.image_My_Courses_forex.setBackgroundResource(item.getImage_icon());
 
@@ -106,10 +110,13 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
        holder.textView_My_course_forex.setText(""+my_course_text_2);
 
+        holder.time.setText(""+timing_2);
+
 
         context = holder.textView_My_course_forex.getContext();
         context1 = holder.image_My_Courses_forex.getContext();
         context2 = holder.border_forex.getContext();
+       // context4 = holder.time.getContext();
 
 
         holder.textView_My_course_forex.setOnClickListener(new View.OnClickListener() {
@@ -120,8 +127,9 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Main9Activity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_first_question.class);
                     context.startActivity(i);
 
 
@@ -130,48 +138,54 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Main7Activity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_second_question.class);
                     context.startActivity(i);
                 } else if (position == 2) {
 
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, MainActivity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_third_question.class);
                     context.startActivity(i);
                 } else if (position == 3) {
 
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Main2Activity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_fourth_question.class);
                     context.startActivity(i);
                 } else if (position == 4) {
 
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Sign_up.class);
+                    Intent i = new Intent(context, Beginner_forex_video_five_question.class);
                     context.startActivity(i);
                 } else if (position == 5) {
 
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Main8Activity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_six_question.class);
                     context.startActivity(i);
                 } else if (position == 6) {
 
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
 
-                    Intent i = new Intent(context, Main8Activity.class);
+                    Intent i = new Intent(context, Beginner_forex_video_seven_question.class);
                     context.startActivity(i);
                 }
 
@@ -191,6 +205,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
 
 
@@ -202,6 +217,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, Main7Activity.class);
                     context1.startActivity(i);
@@ -210,6 +226,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, MainActivity.class);
                     context1.startActivity(i);
@@ -218,6 +235,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, Main2Activity.class);
                     context1.startActivity(i);
@@ -226,6 +244,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, Sign_up.class);
                     context1.startActivity(i);
@@ -234,6 +253,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, Main8Activity.class);
                     context1.startActivity(i);
@@ -242,15 +262,14 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context1, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context1,R.color.grey));
 
                     Intent i = new Intent(context1, Main8Activity.class);
                     context1.startActivity(i);
                 }
 
-
             }
         });
-
 
         holder.border_forex.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -261,6 +280,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main9Activity.class);
                     context2.startActivity(i);
@@ -272,6 +292,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
@@ -281,6 +302,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
@@ -290,6 +312,8 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
+
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
@@ -299,6 +323,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
@@ -308,6 +333,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
@@ -317,9 +343,16 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.textView_My_course_forex.setTextColor(ContextCompat.getColor(context2, R.color.green));
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
+                    holder.time.setTextColor(ContextCompat.getColor(context2,R.color.grey));
 
                     Intent i = new Intent(context2, Main8Activity.class);
                     context2.startActivity(i);
+                }
+
+                else {
+
+
+
                 }
 
 

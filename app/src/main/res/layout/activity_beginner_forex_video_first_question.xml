@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#ffffff"
-                android:text="Is the amount of money I have to \ntrade with sensible to achieve my\n goals ?"
+                android:text="What is Forex ? "
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginStart="20dp"
@@ -48,13 +48,24 @@
         </LinearLayout>
 
 
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/image"
+            android:clickable="true"
+            android:cropToPadding="true"
+            />
+
+
 
 
         <WebView
             android:id="@+id/web_text_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             >
@@ -64,7 +75,6 @@
             android:id="@+id/web_text_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             >

@@ -50,10 +50,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-
 
 
         border_one = findViewById(R.id.view_1);
@@ -136,12 +132,10 @@ public class MainActivity extends AppCompatActivity
                 main4.beginTransaction().replace(R.id.frame_4,beginner_41).commit();
 
                 textView_beginner.setBackgroundResource(R.drawable.begginner_blue);
-
                 textView_Intermediate.setTextColor(Color.parseColor("#989797"));
                 textView_beginner.setTextColor(Color.parseColor("#ffffff"));
                 textView_Advance.setTextColor(Color.parseColor("#989797"));
                 textView_Advance.setBackgroundResource(R.drawable.advance_backgrond);
-
                 textView_Intermediate.setBackgroundResource(R.drawable.intermediate_white);
                 textView_Intermediate.setTypeface(textView_Intermediate.getTypeface(), Typeface.NORMAL);
                 textView_beginner.setTypeface(textView_beginner.getTypeface(), Typeface.BOLD);
@@ -163,16 +157,13 @@ public class MainActivity extends AppCompatActivity
 
 
                 main4.beginTransaction().replace(R.id.frame_4,advance_41).commit();
-
                 textView_Advance.setBackgroundResource(R.drawable.back_ground_blue_article);
-
                 textView_Intermediate.setTextColor(Color.parseColor("#989797"));
                 textView_Advance.setTextColor(Color.parseColor("#ffffff"));
                 textView_beginner.setTextColor(Color.parseColor("#989797"));
                 textView_beginner.setBackgroundResource(R.drawable.begiiner_backround);
                 //border_one.setBackgroundColor(R.color.white);
                 border_one.setBackgroundResource(R.color.white);
-
                 textView_Intermediate.setBackgroundResource(R.drawable.intermediate_white);
                 textView_Intermediate.setTypeface(textView_Intermediate.getTypeface(), Typeface.NORMAL);
                 textView_beginner.setTypeface(textView_beginner.getTypeface(), Typeface.NORMAL);
@@ -191,15 +182,15 @@ public class MainActivity extends AppCompatActivity
 
 
 
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+//
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+//                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+//        drawer.setDrawerListener(toggle);
+//        toggle.syncState();
+//
+//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+//        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -246,6 +237,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent   i = new Intent(MainActivity.this,Main5Activity.class);
+            startActivity(i);
+
 
         } else if (id == R.id.nav_slideshow) {
 

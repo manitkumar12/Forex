@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="160dp"
-    android:layout_height="180dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginBottom="20dp"
+    android:layout_width="140dp"
+    android:layout_height="190dp"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
     android:orientation="vertical"
     android:background="#ffffff"
     >
-
 
 
         <ImageView
@@ -18,28 +19,17 @@
             android:layout_height="120dp"
             android:background="#121212"
 
-
-
             />
 
         <TextView
             android:id="@+id/my_course_text_view"
-            android:layout_width="140dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="What is Forex ?"
             android:layout_marginTop="5dp"
+            android:layout_gravity="center"
             android:gravity="center_horizontal"
-
-
             />
-
-
-
-
-
-
-
-
 
 
 </LinearLayout>

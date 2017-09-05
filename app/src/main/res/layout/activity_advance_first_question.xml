@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-
         android:gravity="center_horizontal"
         >
 
@@ -23,9 +22,7 @@
             android:paddingTop="50dp"
             android:background="#3f88fb"
             android:paddingBottom="20dp"
-
             >
-
 
             <TextView
                 android:layout_width="0dp"
@@ -38,14 +35,6 @@
                 android:layout_marginStart="20dp"
                 />
 
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_gravity="center"
-                android:src="@drawable/search"
-                />
-
 
 
         </LinearLayout>
@@ -56,10 +45,6 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_marginTop="30dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-
-
             android:src="@drawable/advance_1" />
 
         <WebView
@@ -71,9 +56,6 @@
 
         </WebView>
 
-
     </LinearLayout>
-
-
 
 </ScrollView>

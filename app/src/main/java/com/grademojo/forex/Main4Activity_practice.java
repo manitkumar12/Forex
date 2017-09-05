@@ -3,6 +3,7 @@ package com.grademojo.forex;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,8 +16,11 @@ import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import java.io.File;
@@ -26,6 +30,12 @@ import java.util.List;
 public class Main4Activity_practice extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     private RecyclerView  recyclerView1;
+
+
+    private TextView navbar;
+
+    private DrawerLayout navDrawerStart;
+
 
 
 
@@ -49,13 +59,17 @@ public class Main4Activity_practice extends AppCompatActivity implements Navigat
 
     private RecyclerView.LayoutManager layoutManager2;
 
+    private NavigationView navigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Build.VERSION.SDK_INT < 16) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
         setContentView(R.layout.activity_main4_practice);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
 
 
@@ -64,6 +78,31 @@ public class Main4Activity_practice extends AppCompatActivity implements Navigat
         card_View_course = (CardView) findViewById(R.id.cardview_processed_courses);
 
         text_view_course = (TextView) findViewById(R.id.textview_processed_courses);
+
+
+        navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
+       navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+
+        navbar = (TextView) findViewById(R.id.menu_bar);
+
+        navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d("@@@", "Custom nav button clicked!!");
+
+                if(navDrawerStart.isDrawerOpen(GravityCompat.START)) {
+                    navDrawerStart.closeDrawer(GravityCompat.START);
+                }else{
+                    navDrawerStart.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
 
 
@@ -163,19 +202,20 @@ public class Main4Activity_practice extends AppCompatActivity implements Navigat
 
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+//                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+//        drawer.setDrawerListener(toggle);
+//        toggle.syncState();
+//
+//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+//        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -217,6 +257,9 @@ public class Main4Activity_practice extends AppCompatActivity implements Navigat
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+
+            i = new Intent(Main4Activity_practice.this,Main5Activity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_slideshow) {
 

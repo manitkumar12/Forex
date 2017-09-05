@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#ffffff"
-                android:text="Is the amount of money I have to \ntrade with sensible to achieve my\n goals ?"
+                android:text="Understanding Technical Analysis"
                 android:textSize="18sp"
                 android:gravity="center"
                 android:layout_marginStart="20dp"
@@ -44,8 +44,8 @@
 
 
 
-
         </LinearLayout>
+
 
 
 

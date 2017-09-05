@@ -41,7 +41,7 @@ public class Forex_Hometask_6 extends Fragment {
     private Vector<You_tube_Video> you_tube_videos= new  Vector<You_tube_Video>();
 
     private RecyclerView.LayoutManager mLayoutManager;
-    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>";
+    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe> ? autoplay = 1";
 
 
 
@@ -105,49 +105,47 @@ public class Forex_Hometask_6 extends Fragment {
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "What is Forex? ", R.color.grey));
+                "What is Forex? ", R.color.grey,"3-min"));
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "When can I trade forex?", R.color.grey
+                "When can I trade forex?", R.color.grey,"3-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Why trade forex", R.color.grey
+                "Why trade forex", R.color.grey,"4-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
                 "Charting Basics "
-                , R.color.grey
+                , R.color.grey,"3-min"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Understanding Technical \n Analysis", R.color.grey
-
-        ));
-
-
-        input.add(new My_Course_Forex_Pojo(
-                R.drawable.grey_icon,
-                "Five Key Drivers of \nthe Forex Markets", R.color.grey
+                "Understanding Technical \n Analysis", R.color.grey,"3-min"
 
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "What Is Fundamental \n Analysis", R.color.grey
+                "Five Key Drivers of \nthe Forex Markets", R.color.grey,"5-min"
 
         ));
 
 
+        input.add(new My_Course_Forex_Pojo(
+                R.drawable.grey_icon,
+                "What Is Fundamental \n Analysis", R.color.grey,"4-min"
+
+        ));
 
 
 

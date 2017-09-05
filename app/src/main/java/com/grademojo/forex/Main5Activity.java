@@ -1,11 +1,11 @@
 package com.grademojo.forex;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
@@ -13,16 +13,15 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main5Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 //    private RecyclerView recyclerView_3;
@@ -33,6 +32,12 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
     private TextView textView_ongoing ,textView_Complted,textView_all;
 
     private View border;
+
+    private TextView navbar;
+    private NavigationView navigationView;
+
+    private DrawerLayout navDrawerStart;
+
 
 
     FragmentManager main5 = getSupportFragmentManager();
@@ -47,6 +52,8 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
 
 
 
+
+
 //    private List<My_COurse_Pojo_class> input;
 
 
@@ -54,14 +61,17 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (Build.VERSION.SDK_INT < 16) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
 
         setContentView(R.layout.activity_main5);
 
 
 //        recyclerView_3 = (RecyclerView) findViewById(R.id.recycler_view_3);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
 
         textView_ongoing = (TextView) findViewById(R.id.text_for_Ongoing);
@@ -69,6 +79,30 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
         textView_all = (TextView) findViewById(R.id.text_for_All);
 
         border = findViewById(R.id.all_course);
+
+
+        navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+        navbar = (TextView) findViewById(R.id.menu_bar);
+
+        navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d("@@@", "Custom nav button clicked!!");
+
+                if(navDrawerStart.isDrawerOpen(GravityCompat.START)) {
+                    navDrawerStart.closeDrawer(GravityCompat.START);
+                }else{
+                    navDrawerStart.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
         if (savedInstanceState == null) {
 //           fm.beginTransaction.(R.id.frmae_6, forex_video_6)
@@ -183,14 +217,7 @@ public class Main5Activity extends AppCompatActivity implements NavigationView.O
         });
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override

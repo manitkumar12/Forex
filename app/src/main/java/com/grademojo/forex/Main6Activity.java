@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.graphics.Typeface;
 import android.net.Uri;
+import android.os.Build;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -17,8 +18,11 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.TextView;
@@ -35,6 +39,12 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
     private RecyclerView recyclerView_4, recyclerView_5;
 
     View border;
+
+    private TextView navbar;
+
+    private DrawerLayout navDrawerStart;
+    private NavigationView navigationView;
+
 
 
 
@@ -74,11 +84,12 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        if (Build.VERSION.SDK_INT < 16) {
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        }
         setContentView(R.layout.activity_main6);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
 
 //        recyclerView_4 = (RecyclerView) findViewById(R.id.recycler_view_4);
@@ -92,6 +103,30 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
         textView_video = (TextView) findViewById(R.id.text_for_video);
 
         border = findViewById(R.id.border_video);
+
+
+        navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+
+
+
+        navbar = (TextView) findViewById(R.id.menu_bar);
+
+        navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d("@@@", "Custom nav button clicked!!");
+
+                if(navDrawerStart.isDrawerOpen(GravityCompat.START)) {
+                    navDrawerStart.closeDrawer(GravityCompat.START);
+                }else{
+                    navDrawerStart.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
 
         if (savedInstanceState == null) {
@@ -205,14 +240,7 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
 
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
-        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
@@ -259,6 +287,8 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+         Intent   i = new Intent(Main6Activity.this,Main5Activity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_slideshow) {
 

@@ -9,16 +9,26 @@ public class My_Course_Forex_Pojo {
 
     private String introduction;
 
+    private String timimg_1;
+
     private int image_icon;
 
     private int view_1;
 
+    public String getTimimg_1() {
+        return timimg_1;
+    }
 
 
-    My_Course_Forex_Pojo(int ic, String s ,int v1 ) {
+
+
+
+
+    My_Course_Forex_Pojo(int ic, String s ,int v1, String s1 ) {
         this.image_icon= ic;
         this.introduction = s;
         this.view_1 = v1;
+        this.timimg_1 = s1;
 
 
 
@@ -51,6 +61,12 @@ public class My_Course_Forex_Pojo {
     public void setView_1(int view_1) {
         this.view_1 = view_1;
     }
+
+    public void setTimimg_1(String timimg_1) {
+        this.timimg_1 = timimg_1;
+    }
+
+
 
 
 

@@ -41,6 +41,12 @@
 
         </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
 
         <TextView
             android:id="@+id/forex_text_view_my_course"
@@ -51,9 +57,25 @@
             android:textColor="@color/grey"
             android:layout_marginStart="10dp"
             android:layout_marginTop="8dp"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="3-min"
+            android:textSize="14sp"
+            android:textColor="@color/green"
+            android:layout_marginStart="10dp"
+
             android:gravity="center_horizontal"
 
             />
+
+        </LinearLayout>
 
 
 
