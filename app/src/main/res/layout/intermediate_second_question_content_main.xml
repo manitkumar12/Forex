@@ -27,7 +27,7 @@
             >
 
             <TextView
-                android:id="@+id/menu_bar"
+                android:id="@+id/intermediate_second_question_menu_bar"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:background="@drawable/menu"

@@ -19,7 +19,8 @@ import java.io.File;
 public class Advance_second_question extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
 
-    WebView mWebView ,mwebview2,mwebview3; private TextView navbar;
+    WebView mWebView ,mwebview2,mwebview3;
+    private TextView navbar;
     private NavigationView navigationView;
 
     private DrawerLayout navDrawerStart;
@@ -34,6 +35,10 @@ public class Advance_second_question extends AppCompatActivity implements Naviga
         setContentView(R.layout.activity_advance_second_question);
 
         mWebView = (WebView) findViewById(R.id.web_text_1);
+        mwebview2 = (WebView) findViewById(R.id.web_text_2);
+        mwebview3= (WebView) findViewById(R.id.web_text_3);
+
+        load();
 
 
         navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -43,7 +48,7 @@ public class Advance_second_question extends AppCompatActivity implements Naviga
 
 
 
-        navbar = (TextView) findViewById(R.id.advance_first_menu_bar);
+        navbar = (TextView) findViewById(R.id.advance_second_menu_bar);
 
         navbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +64,9 @@ public class Advance_second_question extends AppCompatActivity implements Naviga
             }
         });
 
-        load();}
+
+
+    }
 
 
 

@@ -46,7 +46,7 @@ public class Advance_third_question extends AppCompatActivity implements Navigat
 
 
 
-        navbar = (TextView) findViewById(R.id.advance_first_menu_bar);
+        navbar = (TextView) findViewById(R.id.advance_third_menu_bar);
 
         navbar.setOnClickListener(new View.OnClickListener() {
             @Override
