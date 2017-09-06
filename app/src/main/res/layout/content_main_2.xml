@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
         android:background="#3f88fb"
-        android:paddingBottom="20dp"
+        android:paddingBottom="30dp"
         android:paddingStart="10dp"
         >
 

@@ -45,7 +45,7 @@ public class Forex_Article_6 extends Fragment {
 
     private List<My_Course_Forex_Pojo> input;
 
-    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs\" frameborder=\"0\" allowfullscreen></iframe>? autoplay = 1";
+    String frameVideo = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/e-EL0Mf4MTs?rel=0\" frameborder=\"0\" allowfullscreen></iframe>? autoplay = 1";
 
 
 

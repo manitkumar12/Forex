@@ -62,7 +62,7 @@ public class Intermediate_41 extends Fragment {
 
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref2,
+                R.drawable.ref4,
 
 
                 "How to Develop a\n Trading Plan ?"
@@ -71,38 +71,38 @@ public class Intermediate_41 extends Fragment {
         ));
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref3,
+                R.drawable.ref2,
 
                 "How to build a \ntrading plan ?"
         ));
 
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref,
+                R.drawable.ref3,
                 "Why am I trading ?"
         ));
 
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref4,
+                R.drawable.ref,
                 "What is your motivation ?"));
 
 
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref,
+                R.drawable.advance_2,
                 "Is the amount of money I have to trade with sensible to achieve my goals ?"
 
         ));
 
 
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref,
+                R.drawable.advance_3,
                 "How to match your goals to a trading style ?"
 
         ));
         input.add(new My_COurse_Pojo_class(
-                R.drawable.ref,
+                R.drawable.advance_1,
                 "Why a trading plan \ni s important ? "
 
         ));

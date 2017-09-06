@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Typeface;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
@@ -407,6 +408,8 @@ public class Main4Activity extends AppCompatActivity {
         } else if (requestCode == CAMERA) {
             Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
             imageview.setImageBitmap(thumbnail);
+//            Matrix matrix = new Matrix();
+//            matrix.postRotate(90);
             saveImage(thumbnail);
             Toast.makeText(Main4Activity.this, "Image Saved!", Toast.LENGTH_SHORT).show();
         }

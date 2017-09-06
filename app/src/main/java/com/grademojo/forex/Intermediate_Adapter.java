@@ -167,15 +167,15 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-//                else  if (position==6)
-//
-//                {
-//
-//                    Intent i = new Intent(context,Main6Activity.class);
-//                    context.startActivity(i);
-//
-//
-//                }
+                else  if (position==6)
+
+                {
+
+                    Intent i = new Intent(context,Intermediate_seven_question.class);
+                    context.startActivity(i);
+
+
+                }
                 else {
 
                     Intent i = new Intent(context,Main6Activity.class);
