@@ -236,11 +236,6 @@ public class Main6Activity extends AppCompatActivity implements NavigationView.O
             }
         });
 
-
-
-
-
-
     }
 
     @Override

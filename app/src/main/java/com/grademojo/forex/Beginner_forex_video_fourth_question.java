@@ -112,6 +112,9 @@ public class Beginner_forex_video_fourth_question extends AppCompatActivity impl
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(Beginner_forex_video_fourth_question.this,Main5Activity.class);
+            startActivity(i);
+
 
         } else if (id == R.id.nav_slideshow) {
 

@@ -184,24 +184,6 @@ public class Advance_41 extends Fragment {
 
                         return 3;
                     }
-
-
-//                switch (position % 7) {
-//                    // first three items span 3 columns each
-//                    case 0:
-//                    case 1:
-//                    case 2:
-//                    case 3:
-//                    case 4:
-//                    case 5:
-//                        return 3;
-//                    // next four items span 2 columns each
-//
-//
-//                    case 6:
-//                        return 6;
-//                }
-//                return position;
                 }
 
 

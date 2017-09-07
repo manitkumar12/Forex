@@ -21,6 +21,7 @@ class Advance_Adapter extends RecyclerView.Adapter<Advance_Adapter.ViewHolder> {
 private List<My_COurse_Pojo_class> value2;
 
         Context context;
+    private int i;
 
 
 
@@ -29,9 +30,11 @@ private List<My_COurse_Pojo_class> value2;
 public class ViewHolder extends RecyclerView.ViewHolder {
 
 
-    public TextView textView_My_course;
+    private TextView textView_My_course;
 
-    public ImageView image_My_Courses;
+    private ImageView image_My_Courses;
+
+
 
 
     public View layout_view;
@@ -82,7 +85,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void onBindViewHolder(Advance_Adapter.ViewHolder holder, final int position) {
 
 
-        My_COurse_Pojo_class item = value2.get(position);
+        final My_COurse_Pojo_class item = value2.get(position);
 
 
         String my_course_text_1 = value2.get(position).getMy_course_text();
@@ -99,7 +102,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         holder.image_My_Courses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (position==0)
+                if (i==0)
                 {
 
                     Intent i = new Intent(context,Advance_first_question.class);
@@ -109,7 +112,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
                 }
 
-                else  if (position==1)
+                else  if (i==1)
 
                 {
 
@@ -121,7 +124,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==2)
+                else  if (i==2)
 
                 {
 
@@ -133,7 +136,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==3)
+                else  if (i==3)
 
                 {
 
@@ -144,7 +147,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
                 }
 
-                else  if (position==4)
+                else  if (i==4)
 
                 {
 
@@ -155,7 +158,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==5)
+                else  if (i==5)
 
                 {
 

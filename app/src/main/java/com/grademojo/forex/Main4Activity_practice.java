@@ -36,26 +36,15 @@ public class Main4Activity_practice extends AppCompatActivity implements Navigat
 
     private DrawerLayout navDrawerStart;
 
-
-
-
-
-
     private My_Adapter_2 myAdapter2;
-
-
-
 
     private List<My_Course_pojo_second> input2;
 
     private CardView card_View_course;
 
-
-
-
     private TextView text_view_course ,textView_suggested_course;
 
-    Intent i;
+    private Intent i;
 
     private RecyclerView.LayoutManager layoutManager2;
 

@@ -90,7 +90,7 @@ public class My_Adapter_2 extends RecyclerView.Adapter<My_Adapter_2.ViewHolder> 
     }
 
 
-    public void onBindViewHolder(ViewHolder holder, final int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
 
         My_Course_pojo_second item = value.get(position);
         context = holder.text_Name.getContext();

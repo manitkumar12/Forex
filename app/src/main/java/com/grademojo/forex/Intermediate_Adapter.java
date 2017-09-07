@@ -20,6 +20,8 @@ class Intermediate_Adapter extends RecyclerView.Adapter<Intermediate_Adapter.Vie
 
 private List<My_COurse_Pojo_class> value1;
 
+    private int i;
+
         Context context;
 
 
@@ -99,7 +101,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         holder.image_My_Courses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (position==0)
+                if (i==0)
                 {
 
                     Intent i = new Intent(context,Intermediate_first_question.class);
@@ -109,7 +111,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
                 }
 
-                else  if (position==1)
+                else  if (i==1)
 
                 {
 
@@ -121,7 +123,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==2)
+                else  if (i==2)
 
                 {
 
@@ -133,7 +135,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==3)
+                else  if (i==3)
 
                 {
 
@@ -144,7 +146,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
                 }
 
-                else  if (position==4)
+                else  if (i==4)
 
                 {
 
@@ -155,7 +157,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==5)
+                else  if (i==5)
 
                 {
 
@@ -167,7 +169,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 }
 
 
-                else  if (position==6)
+                else  if (i==6)
 
                 {
 

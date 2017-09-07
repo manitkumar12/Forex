@@ -18,6 +18,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
 
     private List<My_course_pojo_first> values;
 
+    private int i;
 
     Context context;
 
@@ -91,7 +92,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
     }
 
 
-    public void onBindViewHolder(ViewHolder holder, final int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
 
 
         My_course_pojo_first item = values.get(position);
@@ -109,7 +110,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
         holder.text_Name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (position==0)
+                if (i==0)
                 {
 
                     Intent i = new Intent(context,Main6Activity.class);
@@ -119,19 +120,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
 
                 }
 
-                else  if (position==1)
-
-                {
-
-                    Intent i = new Intent(context,Main6Activity.class);
-                    context.startActivity(i);
-
-
-
-                }
-
-
-                else  if (position==2)
+                else  if (i==1)
 
                 {
 
@@ -143,29 +132,7 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
                 }
 
 
-                else  if (position==3)
-
-                {
-
-                    Intent i = new Intent(context,Main6Activity.class);
-                    context.startActivity(i);
-
-
-
-                }
-
-                else  if (position==4)
-
-                {
-
-                    Intent i = new Intent(context,Main6Activity.class);
-                    context.startActivity(i);
-
-
-                }
-
-
-                else  if (position==5)
+                else  if (i==2)
 
                 {
 
@@ -177,7 +144,41 @@ public class My_Adapter extends RecyclerView.Adapter<My_Adapter.ViewHolder> {
                 }
 
 
-                else  if (position==6)
+                else  if (i==3)
+
+                {
+
+                    Intent i = new Intent(context,Main6Activity.class);
+                    context.startActivity(i);
+
+
+
+                }
+
+                else  if (i==4)
+
+                {
+
+                    Intent i = new Intent(context,Main6Activity.class);
+                    context.startActivity(i);
+
+
+                }
+
+
+                else  if (i==5)
+
+                {
+
+                    Intent i = new Intent(context,Main6Activity.class);
+                    context.startActivity(i);
+
+
+
+                }
+
+
+                else  if (i==6)
 
                 {
 

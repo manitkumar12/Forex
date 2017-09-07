@@ -109,6 +109,9 @@ public class Advance_first_question extends AppCompatActivity implements Navigat
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(Advance_first_question.this,Main5Activity.class);
+            startActivity(i);
+
 
         } else if (id == R.id.nav_slideshow) {
 
