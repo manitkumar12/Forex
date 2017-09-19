@@ -64,23 +64,7 @@ public class Beginner_41 extends Fragment {
         textView_suggested_course = (TextView) rootView.findViewById(R.id.text_view_suggested_course);
 
 
-//
-//        textView_Intermediate.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i;
-//                i = new Intent(getActivity().getApplication(), Intermediate_41.class);
-//                startActivity(i);
-//            }
-//        });
-//
-//        textView_Advance.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(getActivity().getApplication(), Advance_41.class);
-//                startActivity(i);
-//            }
-//        });
+
 
 
         textView_mu_course.setOnClickListener(new View.OnClickListener() {
@@ -233,34 +217,6 @@ public class Beginner_41 extends Fragment {
         recyclerView1.setLayoutManager(layoutManager2);
 
 
-
-
-//        List<String> input1 = new ArrayList<>();
-//        for (int i = 0; i < 15; i++) {
-//            input.add("Test" + i);
-//        }// define an adapter
-//        myAdapter2 = new My_Adapter_2(c2,input);
-//        recyclerView1.setAdapter(myAdapter2);
-//
-//
-//
-//
-//        recyclerView.setAdapter(mAdapter);
-//
-//
-//        SnapHelper snapHelper1 = new LinearSnapHelper();
-//        snapHelper1.attachToRecyclerView(recyclerView1);
-//
-//
-//
-//
-//
-//
-//
-//        layoutManager2 = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
-//
-//
-//        recyclerView1.setLayoutManager(layoutManager2);
 
 
 

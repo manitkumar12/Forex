@@ -95,37 +95,39 @@ public class Forex_Article_6 extends Fragment {
         recyclerView_4.setLayoutManager(mLayoutManager);
 
 
+
+
         input = new ArrayList<>();
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
 
-                "What is Forex? ", R.color.grey,"3-min"));
+                "What is Forex? ", R.color.grey,"3-min","5 points"));
 
         input.add(new My_Course_Forex_Pojo(
-                R.drawable.grey_icon,
+                R.drawable.grey_icon,"When can I trade Forex ?"
 
-                "When can I trade forex?", R.color.grey,"3-min"
+                , R.color.grey,"3-min","5 points"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Why trade forex", R.color.grey,"4-min"
+                "Why trade forex", R.color.grey,"4-min","5 points"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
                 "Charting Basics "
-                , R.color.grey,"3-min"
+                , R.color.grey,"3-min","5 points"
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "Understanding Technical \n Analysis", R.color.grey,"3-min"
+                "Understanding Technical \n Analysis", R.color.grey,"3-min","5 points"
 
         ));
 
@@ -133,16 +135,16 @@ public class Forex_Article_6 extends Fragment {
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
                 "Five Key Drivers of \nthe Forex Markets", R.color.grey,"5-min"
+                ,"5 points"
 
         ));
 
 
         input.add(new My_Course_Forex_Pojo(
                 R.drawable.grey_icon,
-                "What Is Fundamental \n Analysis", R.color.grey,"4-min"
+                "What Is Fundamental \n Analysis", R.color.grey,"4-min","5 points"
 
         ));
-
 
 
 

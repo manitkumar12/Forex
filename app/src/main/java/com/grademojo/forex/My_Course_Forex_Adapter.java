@@ -1,5 +1,7 @@
 package com.grademojo.forex;
 
+import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -24,7 +26,13 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
     private int i;
 
-    Context context, context1, context2 ,context4;
+    private Context context, context1, context2 ;
+
+    Beginner_forex_video_five_question beginner_forex_video_five_question = new Beginner_forex_video_five_question();
+
+    FragmentManager fm;
+
+
 
 
 
@@ -34,7 +42,7 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
         public View border_forex;
 
 
-        public TextView textView_My_course_forex, time;
+        public TextView textView_My_course_forex, time , text_view_points;
 
         public ImageView image_My_Courses_forex;
 
@@ -55,6 +63,10 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
             image_My_Courses_forex = (ImageView) itemView.findViewById(R.id.forex_play_icon_my_course);
 
             time = (TextView) itemView.findViewById(R.id.timing);
+
+
+
+            text_view_points = (TextView) itemView.findViewById(R.id.points);
 
             border_forex  = itemView.findViewById(R.id.forex_border_my_course);
 
@@ -86,7 +98,8 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
         View view = inflater.inflate(R.layout.my_course_forex_relative,parent,false);
 
-        My_Course_Forex_Adapter.ViewHolder viewHolder = new My_Course_Forex_Adapter.ViewHolder(view);
+        My_Course_Forex_Adapter.ViewHolder viewHolder;
+        viewHolder = new ViewHolder(view);
 
         return viewHolder;
     }
@@ -102,9 +115,15 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 
 
 
+
+
         String my_course_text_2 = value1_2.get(position).getIntroduction();
 
         String timing_2 = value1_2.get(position).getTimimg_1();
+
+
+
+        String points_2 = value1_2.get(position).getPoints();
 
 
         holder.image_My_Courses_forex.setBackgroundResource(item.getImage_icon());
@@ -115,6 +134,9 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
        holder.textView_My_course_forex.setText(""+my_course_text_2);
 
         holder.time.setText(""+timing_2);
+
+
+        holder.text_view_points.setText(""+points_2);
 
 
         context = holder.textView_My_course_forex.getContext();
@@ -132,6 +154,11 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
                     holder.image_My_Courses_forex.setImageResource(R.drawable.green_icon);
                     holder.border_forex.setBackgroundResource(R.color.green);
                     holder.time.setTextColor(ContextCompat.getColor(context,R.color.grey));
+
+
+
+
+
 
                     Intent i = new Intent(context, Beginner_forex_video_first_question.class);
                     context.startActivity(i);
@@ -374,6 +401,10 @@ public class My_Course_Forex_Adapter extends RecyclerView.Adapter<My_Course_Fore
 //        holder.border_View_second.setBackgroundColor(ContextCompat.getColor(holder.layout_view.getContext(),item.getView_3()));
 
 
+    }
+
+    public void onClick(View v) {
+        FragmentManager manager = ((Activity) context).getFragmentManager();
     }
 
 

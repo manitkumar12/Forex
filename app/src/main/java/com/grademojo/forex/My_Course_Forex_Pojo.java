@@ -9,7 +9,18 @@ public class My_Course_Forex_Pojo {
 
     private String introduction;
 
+
     private String timimg_1;
+
+    public String getPoints() {
+        return points;
+    }
+
+    public void setPoints(String points) {
+        this.points = points;
+    }
+
+    private String points;
 
     private int image_icon;
 
@@ -24,11 +35,13 @@ public class My_Course_Forex_Pojo {
 
 
 
-    My_Course_Forex_Pojo(int ic, String s ,int v1, String s1 ) {
+    My_Course_Forex_Pojo(int ic, String s ,int v1, String s1 ,String p1 ) {
         this.image_icon= ic;
         this.introduction = s;
         this.view_1 = v1;
         this.timimg_1 = s1;
+
+        this.points = p1;
 
 
 

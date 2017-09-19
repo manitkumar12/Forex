@@ -37,9 +37,7 @@ public class Advance_41 extends Fragment {
 
 
 
-        private TextView textView_Intermediate , textView_Advance;
 
-        private TextView textView_mu_course ,textView_suggested_course;
 
     private TextView textView_ongoing ,textView_all;
 
@@ -71,23 +69,6 @@ public class Advance_41 extends Fragment {
 
 
 
-
-//            textView_mu_course.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    i = new Intent(getActivity().getApplication(),Main5Activity.class);
-//                    startActivity(i);
-//                }
-//            });
-//
-//
-//            textView_suggested_course.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    i = new Intent(getActivity().getApplication(),Main5Activity.class);
-//                    startActivity(i);
-//                }
-//            });
 
 
             input = new ArrayList<>();
@@ -123,29 +104,6 @@ public class Advance_41 extends Fragment {
             ));
 
 
-//            input.add(new My_COurse_Pojo_class(
-//                    R.drawable.ref4,
-//                    "What is your motivation ?"));
-//
-//
-//
-//            input.add(new My_COurse_Pojo_class(
-//                    R.drawable.ref,
-//                    "Is the amount of money I have to trade with sensible to achieve my goals ?"
-//
-//            ));
-//
-//
-//            input.add(new My_COurse_Pojo_class(
-//                    R.drawable.ref,
-//                    "How to match your goals to a trading style ?"
-//
-//            ));
-//            input.add(new My_COurse_Pojo_class(
-//                    R.drawable.ref,
-//                    "Why a trading plan \ni s important ? "
-//
-//            ));
 
 
 

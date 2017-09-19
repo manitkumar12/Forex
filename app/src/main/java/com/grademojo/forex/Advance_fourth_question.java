@@ -103,11 +103,11 @@ public class Advance_fourth_question extends AppCompatActivity implements Naviga
     public boolean onNavigationItemSelected(MenuItem item) {
 
 
-        // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(Advance_fourth_question.this,Main5Activity.class);
             startActivity(i);

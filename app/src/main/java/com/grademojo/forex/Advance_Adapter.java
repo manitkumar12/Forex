@@ -21,7 +21,7 @@ class Advance_Adapter extends RecyclerView.Adapter<Advance_Adapter.ViewHolder> {
 private List<My_COurse_Pojo_class> value2;
 
         Context context;
-    private int i;
+        int i;
 
 
 
@@ -169,16 +169,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
                 }
 
-
-//                else  if (position==6)
-//
-//                {
-//
-//                    Intent i = new Intent(context,Main6Activity.class);
-//                    context.startActivity(i);
-//
-//
-//                }
                 else {
 
                     Intent i = new Intent(context,Main6Activity.class);
@@ -193,12 +183,6 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
 
 
-
-//        holder.border_View.setBackgroundColor(ContextCompat.getColor(holder.layout_view.getContext(),item.getView_1()));
-//
-//        holder.border_View_first.setBackgroundColor(ContextCompat.getColor(holder.layout_view.getContext(),item.getView_2()));
-//
-//        holder.border_View_second.setBackgroundColor(ContextCompat.getColor(holder.layout_view.getContext(),item.getView_3()));
 
     }
 

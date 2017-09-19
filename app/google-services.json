@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306320739760",
+    "project_id": "gmailint-1858a"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306320739760:android:49eda421b14b326f",
+        "android_client_info": {
+          "package_name": "com.grademojo.forex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306320739760-hqif6eiqjqeq10goptcf2eng65h76akp.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "306320739760-e3ota8r6qo7jjgf1tvm604k2osmarnem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.grademojo.forex",
+            "certificate_hash": "f16fcd3b6740d624b15452bd63e4d4aa5d736de9"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDpZZBirVXOUh2Z6b9peOcpmmvW2NIAU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,9 +9,6 @@ import android.webkit.WebView;
 
 import java.util.List;
 
-/**
- * Created by sapling_a0 on 18/8/17.
- */
 
 public class YouTube_Adapter_class extends RecyclerView.Adapter<YouTube_Adapter_class.ViewHolder>
 
