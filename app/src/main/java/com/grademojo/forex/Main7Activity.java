@@ -395,7 +395,7 @@ public class Main7Activity extends AppCompatActivity implements  GoogleApiClient
                         String text = "Name"+json.getString("name")+"Email : "+json.getString("email")+"Profile link : "+json.getString("link");
                         // details_txt.setText(Html.fromHtml(text));
                         //  details_txt.setText(json.getString(text));
-                        profile.setProfileId(json.getString("id"));
+      //                  profile.setProfileId(json.getString("id"));
                     }
 
                 } catch (JSONException e) {
