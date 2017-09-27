@@ -8,6 +8,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,6 +28,10 @@ public class Beginner_forex_video_third_question extends AppCompatActivity imple
 
     private DrawerLayout navDrawerStart;
 
+    private CardView next;
+
+    private TextView next1;
+
 
 
 
@@ -41,6 +46,26 @@ public class Beginner_forex_video_third_question extends AppCompatActivity imple
         navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        next = (CardView) findViewById(R.id.beginner_third_card);
+        next1 = (TextView) findViewById(R.id.beginner_third_text);
+
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Beginner_forex_video_third_question.this,Beginner_forex_video_fourth_question.class);
+                startActivity(i);
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Beginner_forex_video_third_question.this,Beginner_forex_video_fourth_question.class);
+                startActivity(i);
+
+            }
+        });
 
 
 

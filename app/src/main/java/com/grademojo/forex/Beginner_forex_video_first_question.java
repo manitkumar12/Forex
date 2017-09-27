@@ -3,14 +3,14 @@ package com.grademojo.forex;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
@@ -22,6 +22,9 @@ public class Beginner_forex_video_first_question extends AppCompatActivity imple
 
 
     private ImageView imageView;
+
+    private CardView next;
+    private TextView next1;
 
 
 
@@ -41,6 +44,25 @@ public class Beginner_forex_video_first_question extends AppCompatActivity imple
 
         mWebView = (WebView) findViewById(R.id.web_text_1);
         imageView = (ImageView) findViewById(R.id.image1);
+        next = (CardView) findViewById(R.id.beginner_first_card);
+        next1 = (TextView) findViewById(R.id.beginner_first_text);
+
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Beginner_forex_video_first_question.this,Beginner_forex_video_second_question.class);
+                startActivity(i);
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Beginner_forex_video_first_question.this,Beginner_forex_video_second_question.class);
+                startActivity(i);
+
+            }
+        });
 
 
         navDrawerStart = (DrawerLayout) findViewById(R.id.drawer_layout);
